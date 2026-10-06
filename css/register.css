@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8faf8;
+    color: #333333;
+}
+
+.register-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 15px;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 450px;
+
+    background: #ffffff;
+
+    padding: 35px 40px;
+
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+
+.register-logo {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.register-logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.register-box h1 {
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 750;
+
+    color: #333333;
+
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #666666;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #333333;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #3a8f3a;
+}
+
+.register-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #3a8f3a;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background: #2f7530;
+}
+
+.login-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #666666;
+
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #3a8f3a;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.message {
+    padding: 11px 13px;
+
+    margin-bottom: 18px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+.message.error {
+    background: #fff1f1;
+    color: #b22222;
+    border: 1px solid #f0cccc;
+}
+
+@media (max-width: 500px) {
+
+    .register-box {
+        padding: 30px 22px;
+    }
+
+    .register-box h1 {
+        font-size: 24px;
+    }
+}

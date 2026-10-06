@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f8f4;
+
+    color: #222222;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SUCCESS PAGE
+========================================================= */
+
+.success-page {
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* =========================================================
+   SUCCESS CARD
+========================================================= */
+
+.success-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 45px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe8df;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   GREEN TICK
+========================================================= */
+
+.success-check {
+    width: 84px;
+
+    height: 84px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #3a8f3a;
+
+    color: #ffffff;
+
+    font-size: 46px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.success-label {
+    color: #3a8f3a;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.success-card h1 {
+    color: #3a8f3a;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.success-message {
+    color: #777777;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .success-page {
+        padding: 15px;
+    }
+
+    .success-card {
+        padding: 38px 22px;
+    }
+
+    .success-check {
+        width: 72px;
+
+        height: 72px;
+
+        font-size: 38px;
+    }
+
+    .success-card h1 {
+        font-size: 25px;
+    }
+
+}

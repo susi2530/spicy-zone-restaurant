@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8faf8;
+    color: #333333;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    min-height: 68px;
+
+    padding: 8px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand a {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.brand span {
+    color: #333333;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #3a8f3a;
+}
+
+
+/* ================= PAGE ================= */
+
+.booking-details-page {
+    width: 92%;
+    max-width: 680px;
+
+    margin: 22px auto 35px;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #3a8f3a;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* ================= CARD ================= */
+
+.booking-details-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+
+/* ================= HEADING ================= */
+
+.details-heading {
+    margin-bottom: 15px;
+}
+
+.small-heading {
+    color: #3a8f3a;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+.details-heading h1 {
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.details-heading p:last-child {
+    color: #777777;
+
+    font-size: 12px;
+}
+
+
+/* ================= STATUS ================= */
+
+.booking-status-box {
+    padding: 10px 12px;
+
+    margin-bottom: 14px;
+
+    background: #f1f8f1;
+
+    border: 1px solid #d7ead7;
+
+    border-radius: 5px;
+}
+
+.booking-status-box span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    margin-bottom: 3px;
+}
+
+.booking-status-box strong {
+    color: #3a8f3a;
+
+    font-size: 13px;
+}
+
+
+/* ================= DETAILS ================= */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-bottom: 14px;
+}
+
+.detail-box {
+    padding: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 5px;
+}
+
+.detail-box span {
+    display: block;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    margin-bottom: 4px;
+}
+
+.detail-box strong {
+    color: #333333;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* ================= NOTE ================= */
+
+.booking-note {
+    padding: 10px 12px;
+
+    margin-bottom: 14px;
+
+    background: #f8faf8;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 5px;
+
+    color: #666666;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= ACTIONS ================= */
+
+.booking-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+
+    padding: 9px 14px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.primary-btn {
+    background: #3a8f3a;
+
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background: #2f7530;
+}
+
+.secondary-btn {
+    background: #ffffff;
+
+    border: 1px solid #3a8f3a;
+
+    color: #3a8f3a;
+}
+
+.secondary-btn:hover {
+    background: #f1f8f1;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e1e1e1;
+
+    text-align: center;
+}
+
+footer p {
+    color: #666666;
+
+    font-size: 11px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-details-card {
+        padding: 16px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+}

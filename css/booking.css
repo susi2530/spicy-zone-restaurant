@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8faf8;
+    color: #333333;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    min-height: 78px;
+
+    padding: 10px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand a {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.brand span {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #3a8f3a;
+}
+
+
+/* ================= HEADER ================= */
+
+.booking-header {
+    padding: 45px 7% 30px;
+    text-align: center;
+}
+
+.small-heading {
+    color: #3a8f3a;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.booking-header h1 {
+    color: #333333;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.booking-header p:last-child {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.booking-message {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto 20px;
+
+    padding: 13px 15px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.booking-message.success {
+    background: #eff9ef;
+    border: 1px solid #cde6cd;
+    color: #2f7530;
+}
+
+.booking-message.error {
+    background: #fff1f1;
+    border: 1px solid #f0cccc;
+    color: #b22222;
+}
+
+
+/* ================= PAGE ================= */
+
+.booking-page {
+    width: 90%;
+    max-width: 1050px;
+
+    margin: 0 auto 60px;
+}
+
+
+/* ================= CARD ================= */
+
+.booking-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 8px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+.booking-card h2 {
+    color: #333333;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #3a8f3a;
+}
+
+
+/* ================= TABLE HEADING ================= */
+
+.table-heading {
+    margin-bottom: 20px;
+}
+
+.table-heading h2 {
+    margin-bottom: 6px;
+}
+
+.table-heading p {
+    color: #777777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= TABLE GRID ================= */
+
+.table-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ================= TABLE CARD ================= */
+
+.table-card {
+    position: relative;
+    display: block;
+
+    cursor: pointer;
+}
+
+.table-card input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.table-content {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+}
+
+.table-card:hover .table-content {
+    border-color: #3a8f3a;
+}
+
+.table-card input:checked + .table-content {
+    border: 2px solid #3a8f3a;
+    background: #f4faf4;
+}
+
+
+/* ================= BOOKED TABLE ================= */
+
+.table-card.booked {
+    cursor: not-allowed;
+
+    opacity: 0.58;
+}
+
+.table-card.booked .table-content {
+    border-color: #d8d8d8;
+
+    background: #f6f6f6;
+}
+
+.table-card.booked:hover .table-content {
+    border-color: #d8d8d8;
+}
+
+
+/* ================= DISABLED BY GUEST COUNT ================= */
+
+.table-card.disabled {
+    opacity: 0.32;
+
+    pointer-events: none;
+}
+
+
+/* ================= TABLE IMAGE ================= */
+
+.table-image {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+.table-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* ================= TABLE INFO ================= */
+
+.table-info {
+    padding: 14px;
+
+    text-align: center;
+}
+
+.table-info h3 {
+    color: #333333;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.table-info p {
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+/* ================= AVAILABILITY ================= */
+
+.table-available {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #3a8f3a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.table-unavailable {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #b22222;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* ================= NO TABLE ================= */
+
+.no-tables {
+    grid-column: 1 / -1;
+
+    padding: 45px 20px;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 7px;
+
+    text-align: center;
+}
+
+.no-tables h3 {
+    color: #333333;
+
+    margin-bottom: 8px;
+}
+
+.no-tables p {
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.booking-confirm {
+    text-align: center;
+
+    padding-top: 5px;
+}
+
+.book-btn {
+    padding: 13px 24px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #3a8f3a;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: #2f7530;
+}
+
+.back-btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    margin-left: 10px;
+
+    border: 1px solid #3a8f3a;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #3a8f3a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.back-btn:hover {
+    background: #f1f8f1;
+}
+
+.booking-note {
+    margin: 8px auto 4px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #666;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 22px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e1e1e1;
+
+    text-align: center;
+}
+
+footer p {
+    color: #666666;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .table-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .table-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-header h1 {
+        font-size: 27px;
+    }
+
+    .back-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* =========================================================
+   TABLE COUNT TEXT
+========================================================= */
+
+.table-count-row > label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #222222;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLE COUNT HELPER TEXT
+========================================================= */
+
+.table-count-row .selected-table-note {
+    margin-top: 6px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   TABLE AVAILABILITY MESSAGE
+========================================================= */
+
+.table-loading-message {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}

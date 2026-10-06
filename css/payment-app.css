@@ -1,0 +1,635 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f6f8;
+
+    color: #111;
+
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.payment-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.payment-card {
+
+    width: 100%;
+
+    max-width: 390px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding:
+        30px
+        24px
+        22px;
+
+    box-shadow:
+        0
+        15px
+        45px
+        rgba(
+            0,
+            0,
+            0,
+            0.09
+        );
+
+}
+
+
+/* =========================================================
+   APP HEADER
+========================================================= */
+
+.app-header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.app-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* =========================================================
+   GOOGLE PAY
+========================================================= */
+
+.google-pay-logo {
+
+    width: 64px;
+
+    height: 64px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4285f4 0%,
+            #34a853 35%,
+            #fbbc05 68%,
+            #ea4335 100%
+        );
+
+}
+
+
+.g-letter {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #4285f4;
+
+    font-size: 31px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   PHONEPE
+========================================================= */
+
+.phonepe-logo {
+
+    width: 64px;
+
+    height: 64px;
+
+    border-radius: 18px;
+
+    background:
+        #5f259f;
+
+    color:
+        #ffffff;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   PAYTM
+========================================================= */
+
+.paytm-logo {
+
+    width: 86px;
+
+    height: 64px;
+
+    border-radius: 18px;
+
+    background:
+        #eaf8ff;
+
+    color:
+        #00a9e0;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+/* =========================================================
+   APP TEXT
+========================================================= */
+
+.app-header h1 {
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+
+.upi-label {
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #888;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   AMOUNT
+========================================================= */
+
+.amount-box {
+
+    margin-top: 24px;
+
+    padding: 19px;
+
+    border-radius: 16px;
+
+    background: #f7f7f8;
+
+    text-align: center;
+
+}
+
+
+.amount-box small {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.amount-box strong {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   UPI FIELD
+========================================================= */
+
+.upi-field {
+
+    margin-top: 24px;
+
+}
+
+
+.upi-field label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.upi-field input {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding:
+        0
+        15px;
+
+    border:
+        1px solid
+        #d7d7d7;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    font-size: 16px;
+
+}
+
+
+.upi-field input:focus {
+
+    border-color:
+        #4285f4;
+
+    box-shadow:
+        0
+        0
+        0
+        3px
+        rgba(
+            66,
+            133,
+            244,
+            0.12
+        );
+
+}
+
+
+.upi-field small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #888;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.payment-error {
+
+    margin-top: 13px;
+
+    padding:
+        11px
+        13px;
+
+    border-radius: 10px;
+
+    background:
+        #fff0f0;
+
+    color:
+        #c62828;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   PAY BUTTON
+========================================================= */
+
+.pay-button {
+
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background:
+        #111111;
+
+    color:
+        #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.pay-button:hover {
+
+    opacity: 0.92;
+
+}
+
+
+.pay-button:disabled {
+
+    opacity: 0.55;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   CANCEL
+========================================================= */
+
+.cancel-button {
+
+    display: block;
+
+    width: 100%;
+
+    height: 44px;
+
+    margin-top: 8px;
+
+    color: #777;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    line-height: 44px;
+
+    font-size: 13px;
+
+}
+
+
+.cancel-button:hover {
+
+    color: #222;
+
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.security-text {
+
+    margin-top: 10px;
+
+    color: #999;
+
+    text-align: center;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   PROCESSING SCREEN
+========================================================= */
+
+.processing-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.97
+        );
+
+}
+
+
+.processing-screen.active {
+
+    display: flex;
+
+}
+
+
+.processing-box {
+
+    text-align: center;
+
+}
+
+
+.spinner {
+
+    width: 52px;
+
+    height: 52px;
+
+    margin:
+        0
+        auto
+        18px;
+
+    border:
+        5px
+        solid
+        #e5e5e5;
+
+    border-top-color:
+        #4285f4;
+
+    border-radius: 50%;
+
+    animation:
+        paymentSpin
+        0.8s
+        linear
+        infinite;
+
+}
+
+
+.processing-box h2 {
+
+    font-size: 21px;
+
+}
+
+
+.processing-box p {
+
+    margin-top: 7px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+@keyframes paymentSpin {
+
+    from {
+
+        transform:
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (
+    max-width: 480px
+) {
+
+    .payment-page {
+
+        padding: 12px;
+
+    }
+
+
+    .payment-card {
+
+        padding:
+            26px
+            18px
+            20px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .amount-box strong {
+
+        font-size: 27px;
+
+    }
+
+
+    .app-header h1 {
+
+        font-size: 20px;
+
+    }
+
+}

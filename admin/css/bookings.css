@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7f5;
+
+    color: #222222;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.admin-navbar {
+    width: 100%;
+
+    min-height: 74px;
+
+    padding: 10px 4%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e1e5e1;
+}
+
+.admin-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    flex-shrink: 0;
+}
+
+.admin-brand a {
+    display: flex;
+
+    align-items: center;
+}
+
+.admin-brand img {
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: contain;
+}
+
+.admin-brand strong {
+    display: block;
+
+    color: #222222;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+.admin-brand span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #3a8f3a;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.admin-nav {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.admin-nav a {
+    color: #444444;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.admin-nav a:hover {
+    color: #3a8f3a;
+}
+
+.admin-nav a.active {
+    color: #3a8f3a;
+}
+
+.admin-nav .logout-link {
+    color: #b33434;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.bookings-page {
+    width: 100%;
+
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    padding: 32px 22px 50px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.page-heading {
+    margin-bottom: 22px;
+}
+
+.eyebrow {
+    color: #3a8f3a;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.page-heading h1 {
+    color: #222222;
+
+    font-size: 30px;
+
+    margin-bottom: 6px;
+}
+
+.page-heading p:last-child {
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.admin-message {
+    padding: 11px 14px;
+
+    margin-bottom: 18px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+}
+
+.admin-message.success {
+    background: #eef8ee;
+
+    border: 1px solid #cde3ce;
+
+    color: #2f7e35;
+}
+
+.admin-message.error {
+    background: #fff1f1;
+
+    border: 1px solid #efcccc;
+
+    color: #b33b3b;
+}
+
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.bookings-panel {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e5e1;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE WRAP
+========================================================= */
+
+.bookings-table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+table {
+    width: 100%;
+
+    min-width: 1000px;
+
+    border-collapse: collapse;
+}
+
+thead th {
+    padding: 13px 12px;
+
+    background: #fafcf9;
+
+    border-bottom: 1px solid #e4e8e4;
+
+    color: #777777;
+
+    text-align: left;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 14px 12px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    vertical-align: middle;
+
+    color: #555555;
+
+    font-size: 11px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #fcfdfc;
+}
+
+
+/* =========================================================
+   CUSTOMER
+========================================================= */
+
+.customer-info strong {
+    display: block;
+
+    color: #333333;
+
+    font-size: 11px;
+
+    margin-bottom: 4px;
+}
+
+.customer-info span {
+    display: block;
+
+    max-width: 190px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    color: #999999;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   TABLE INFO
+========================================================= */
+
+.table-info strong {
+    display: block;
+
+    color: #333333;
+
+    font-size: 11px;
+
+    margin-bottom: 4px;
+}
+
+.table-info span {
+    display: block;
+
+    color: #999999;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   DATE & TIME
+========================================================= */
+
+.date-text {
+    color: #333333;
+
+    font-size: 10px;
+}
+
+.time-text {
+    color: #555555;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   GUESTS
+========================================================= */
+
+.guest-count {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 27px;
+
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #edf7ed;
+
+    color: #3a8f3a;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.status-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.status-badge.pending {
+    background: #fff6df;
+
+    color: #9a6b00;
+}
+
+.status-badge.confirmed {
+    background: #eef8ee;
+
+    color: #318235;
+}
+
+.status-badge.completed {
+    background: #edf8f1;
+
+    color: #2e7c47;
+}
+
+.status-badge.cancelled {
+    background: #fff1f1;
+
+    color: #b33b3b;
+}
+
+
+/* =========================================================
+   STATUS FORM
+========================================================= */
+
+.status-form {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.status-select {
+    min-width: 120px;
+
+    padding: 7px 8px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 4px;
+
+    background: #ffffff;
+
+    color: #444444;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.status-select:focus {
+    border-color: #3a8f3a;
+}
+
+.update-btn {
+    min-height: 30px;
+
+    padding: 7px 10px;
+
+    border: 1px solid #3a8f3a;
+
+    border-radius: 4px;
+
+    background: #3a8f3a;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background: #2f7530;
+
+    border-color: #2f7530;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty-bookings {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.empty-bookings h2 {
+    color: #333333;
+
+    font-size: 21px;
+
+    margin-bottom: 7px;
+}
+
+.empty-bookings p {
+    color: #777777;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.admin-footer {
+    padding: 18px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e1e5e1;
+
+    text-align: center;
+}
+
+.admin-footer p {
+    color: #777777;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .admin-navbar {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .admin-nav {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .bookings-page {
+        padding: 25px 12px 40px;
+    }
+
+    .page-heading h1 {
+        font-size: 26px;
+    }
+
+}

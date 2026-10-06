@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7faf7;
+    color: #222222;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 78px;
+
+    padding: 8px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand a {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.brand span {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #3a8f3a;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.details-header {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 30px 20px 22px;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #3a8f3a;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.small-heading {
+    color: #3a8f3a;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.details-header h1 {
+    color: #333333;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.details-header > p:last-child {
+    color: #777777;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.details-page {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0 20px 50px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.details-card {
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe3df;
+
+    border-radius: 9px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status-card {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.status-card span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
+}
+
+.status-card strong {
+    color: #333333;
+
+    font-size: 14px;
+}
+
+.status-card .status {
+    color: #3a8f3a;
+}
+
+.status-card .paid {
+    color: #3a8f3a;
+}
+
+
+/* =========================================================
+   TRACKING
+========================================================= */
+
+.tracking-card h2 {
+    color: #333333;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+.details-tracking {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+}
+
+.details-track-step {
+    width: 78px;
+
+    flex: 0 0 78px;
+
+    text-align: center;
+
+    color: #999999;
+}
+
+.details-track-dot {
+    width: 28px;
+
+    height: 28px;
+
+    margin: 0 auto 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e9ece9;
+
+    color: transparent;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.details-track-step.completed {
+    color: #3a8f3a;
+}
+
+.details-track-step.completed .details-track-dot {
+    background: #3a8f3a;
+
+    color: #ffffff;
+}
+
+.details-track-step span {
+    display: block;
+
+    font-size: 9px;
+
+    line-height: 1.3;
+}
+
+.details-track-line {
+    flex: 1;
+
+    height: 2px;
+
+    margin-top: 13px;
+
+    background: #e2e5e2;
+}
+
+.details-track-line.completed {
+    background: #3a8f3a;
+}
+
+
+/* =========================================================
+   ITEMS
+========================================================= */
+
+.details-card h2 {
+    color: #333333;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+.item-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.item-row:last-child {
+    border-bottom: none;
+}
+
+.item-row h3 {
+    color: #333333;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+}
+
+.item-row p {
+    color: #777777;
+
+    font-size: 11px;
+}
+
+.item-row > strong {
+    color: #333333;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ORDER INFORMATION
+========================================================= */
+
+.order-info-card {
+    position: relative;
+}
+
+.section-title-row {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.section-title-row h2 {
+    margin-bottom: 0;
+}
+
+.reorder-form {
+    margin: 0;
+}
+
+.reorder-btn {
+    min-width: 95px;
+
+    min-height: 34px;
+
+    padding: 8px 14px;
+
+    border: 1px solid #3a8f3a;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #3a8f3a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.reorder-btn:hover {
+    background: #3a8f3a;
+
+    color: #ffffff;
+}
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.info-grid div {
+    padding: 12px;
+
+    background: #fafcfa;
+
+    border: 1px solid #e6e9e6;
+
+    border-radius: 6px;
+}
+
+.info-grid span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
+}
+
+.info-grid strong {
+    color: #333333;
+
+    font-size: 13px;
+}
+
+.reorder-message {
+    padding: 9px 11px;
+
+    margin-top: 10px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+}
+
+.reorder-message.error {
+    background: #fff2f2;
+
+    border: 1px solid #efcccc;
+
+    color: #b22222;
+}
+
+
+/* =========================================================
+   BILL
+========================================================= */
+
+.bill-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 9px 0;
+
+    color: #555555;
+
+    font-size: 12px;
+}
+
+.bill-row strong {
+    color: #333333;
+}
+
+.discount-row strong {
+    color: #3a8f3a;
+}
+
+.bill-total {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 13px;
+
+    margin-top: 7px;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+.bill-total span,
+.bill-total strong {
+    color: #222222;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 18px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e1e1e1;
+
+    text-align: center;
+}
+
+footer p {
+    color: #666666;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .details-header {
+        padding: 25px 12px 18px;
+    }
+
+    .details-page {
+        padding: 0 12px 40px;
+    }
+
+    .details-card {
+        padding: 16px;
+    }
+
+    .status-card {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title-row {
+        align-items: flex-start;
+    }
+
+    .reorder-btn {
+        min-width: 82px;
+        padding: 7px 11px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .details-track-step {
+        width: 60px;
+
+        flex-basis: 60px;
+    }
+
+    .details-track-step span {
+        font-size: 8px;
+    }
+
+    .details-track-dot {
+        width: 24px;
+
+        height: 24px;
+    }
+
+}

@@ -1,0 +1,1453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8faf8;
+    color: #333333;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 78px;
+    padding: 10px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand a {
+    display: flex;
+}
+
+.brand img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.brand span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #3a8f3a;
+}
+
+
+/* ================= HEADER ================= */
+
+.checkout-header {
+    padding: 45px 7% 30px;
+    text-align: center;
+}
+
+.small-heading {
+    color: #3a8f3a;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.checkout-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.checkout-header p:last-child {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+/* ================= MAIN ================= */
+
+.checkout-page {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 60px;
+}
+
+.checkout-layout {
+    display: grid;
+
+    grid-template-columns: 1.6fr 1fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+.checkout-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* ================= CARD ================= */
+
+.checkout-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 8px;
+
+    padding: 25px;
+}
+
+.checkout-card h2 {
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= CARD TITLE ================= */
+
+.card-title-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.card-title-row h2 {
+    margin-bottom: 0;
+}
+
+.card-title-row a {
+    color: #3a8f3a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* ================= ADDRESS ================= */
+
+.address-box {
+    padding: 16px;
+
+    background: #f7faf7;
+
+    border: 1px solid #dcecdc;
+
+    border-radius: 6px;
+}
+
+.address-box strong {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+.address-box p {
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 5px;
+}
+
+.no-address {
+    padding: 15px;
+
+    background: #fff8ec;
+
+    border: 1px solid #ead9b7;
+
+    border-radius: 6px;
+}
+
+.no-address p {
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.no-address a {
+    color: #3a8f3a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* ================= ORDER TYPE ================= */
+
+.order-type-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.option-card:hover {
+    border-color: #3a8f3a;
+}
+
+.option-card input {
+    margin-top: 3px;
+}
+
+.option-card strong {
+    font-size: 15px;
+}
+
+.option-card p {
+    color: #777777;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= FORMS ================= */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3a8f3a;
+}
+
+
+/* ================= PAYMENT ================= */
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.payment-option:hover {
+    border-color: #3a8f3a;
+}
+
+.payment-option span {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.checkout-summary {
+    position: sticky;
+
+    top: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 8px;
+
+    padding: 25px;
+}
+
+.checkout-summary h2 {
+    font-size: 21px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= ITEMS ================= */
+
+.summary-items {
+    border-bottom: 1px solid #eeeeee;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 10px;
+}
+
+.summary-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 10px 0;
+}
+
+.summary-item strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+.summary-item p {
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+.summary-item span {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ================= TOTAL ROWS ================= */
+
+.summary-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+    font-size: 14px;
+}
+
+.discount {
+    color: #3a8f3a;
+}
+
+
+/* ================= AUTO DISCOUNT ================= */
+
+.automatic-discount {
+    margin: 15px 0;
+
+    padding: 11px;
+
+    background: #f1f8f1;
+
+    border: 1px solid #d7ead7;
+
+    border-radius: 5px;
+
+    color: #3a753a;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= FINAL TOTAL ================= */
+
+.final-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    margin-bottom: 15px;
+
+    border-top: 1px solid #dddddd;
+}
+
+.final-total span {
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.final-total strong {
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.place-order-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #3a8f3a;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background: #2f7530;
+}
+
+.back-cart-btn {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: 1px solid #3a8f3a;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #3a8f3a;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.back-cart-btn:hover {
+    background: #f1f8f1;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 22px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e1e1e1;
+}
+
+footer p {
+    color: #666666;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
+    }
+}
+
+/* ================= UPI PAYMENT ================= */
+
+.payment-page {
+    width: 90%;
+    max-width: 650px;
+    margin: 50px auto 70px;
+}
+
+.payment-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 10px;
+
+    padding: 35px;
+}
+
+.payment-card h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.payment-subtitle {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.payment-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.payment-order div {
+    padding: 16px;
+
+    background: #f8faf8;
+
+    border: 1px solid #e0e0e0;
+
+    border-radius: 6px;
+}
+
+.payment-order span,
+.success-details span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+}
+
+.payment-order strong {
+    font-size: 16px;
+}
+
+.upi-method {
+    border: 1px solid #dfe6df;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+.upi-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.upi-badge {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #3a8f3a;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+.upi-title h2 {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.upi-title p {
+    color: #777777;
+    font-size: 13px;
+}
+
+.upi-info p {
+    color: #666666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.upi-info input {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.upi-info input:focus {
+    border-color: #3a8f3a;
+}
+
+.payment-note {
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #888888;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= SUCCESS ================= */
+
+.success-page {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 60px auto 80px;
+}
+
+.success-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 10px;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+.success-circle {
+    width: 74px;
+    height: 74px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #3a8f3a;
+
+    color: #ffffff;
+
+    font-size: 36px;
+
+    font-weight: 800;
+}
+
+.success-card h1 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #666666;
+
+    font-size: 15px;
+
+    margin-bottom: 24px;
+}
+
+.success-order-number {
+    padding: 15px;
+
+    background: #f8faf8;
+
+    border: 1px solid #e0e0e0;
+
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+}
+
+.success-order-number span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+}
+
+.success-order-number strong {
+    font-size: 17px;
+}
+
+.success-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.success-details div {
+    padding: 14px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    text-align: left;
+}
+
+.success-details strong {
+    font-size: 14px;
+}
+
+.paid-status {
+    color: #3a8f3a;
+}
+
+.success-note {
+    padding: 13px;
+
+    margin-bottom: 22px;
+
+    border-radius: 5px;
+
+    background: #f1f8f1;
+
+    border: 1px solid #d7ead7;
+
+    color: #3a753a;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.success-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.success-actions a {
+    text-decoration: none;
+}
+
+.redirect-text {
+    margin-top: 18px;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .payment-card,
+    .success-card {
+        padding: 25px 20px;
+    }
+
+    .payment-order,
+    .success-details,
+    .success-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-card h1,
+    .success-card h1 {
+        font-size: 25px;
+    }
+
+    body.payment-screen,
+body.success-screen {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.payment-screen .payment-page,
+body.success-screen .success-page {
+    max-height: calc(100vh - 78px);
+    overflow-y: auto;
+}
+
+}
+
+/* =========================================================
+   UPI PAYMENT + SUCCESS PAGE
+   DESKTOP FIXED VIEW
+========================================================= */
+
+@media (min-width: 901px) {
+
+    /* UPI PAYMENT PAGE */
+
+    .payment-page {
+        height: calc(100vh - 78px);
+
+        max-height: calc(100vh - 78px);
+
+        margin: 0 auto;
+
+        padding: 28px 0;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+    }
+
+
+    .payment-page .payment-card {
+        margin: 0 auto 25px;
+
+        width: 100%;
+
+        max-width: 650px;
+    }
+
+
+    /* SUCCESS PAGE */
+
+    .success-page {
+        height: calc(100vh - 78px);
+
+        max-height: calc(100vh - 78px);
+
+        margin: 0 auto;
+
+        padding: 28px 0;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+    }
+
+
+    .success-page .success-card {
+        margin: 0 auto 25px;
+
+        width: 100%;
+
+        max-width: 700px;
+    }
+
+}
+
+/* =========================================================
+   ONLINE PAYMENT APP OPTIONS
+========================================================= */
+
+.payment-option-content {
+    width: 100%;
+}
+
+.payment-option-content > strong {
+    display: block;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.payment-option-content > p {
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= APP LIST ================= */
+
+.payment-app-options {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+
+/* ================= APP CARD ================= */
+
+.payment-app-card {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.payment-app-card:hover {
+    border-color: #3a8f3a;
+
+    background: #f8faf8;
+}
+
+.payment-app-card input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* ================= SELECTED APP ================= */
+
+.payment-app-card:has(input:checked) {
+    border-color: #3a8f3a;
+
+    background: #f1f8f1;
+}
+
+
+/* ================= APP ICON ================= */
+
+.app-icon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.google-pay-icon {
+    background: #444444;
+}
+
+.phonepe-icon {
+    background: #6b3bbd;
+}
+
+.paytm-icon {
+    background: #1389e6;
+}
+
+
+/* ================= APP TEXT ================= */
+
+.payment-app-text {
+    min-width: 0;
+}
+
+.payment-app-text strong {
+    display: block;
+
+    color: #333333;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.payment-app-text small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #888888;
+
+    font-size: 9px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .payment-app-options {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-app-card {
+        padding: 11px;
+    }
+
+}
+
+/* =========================================================
+   PAYMENT APP OPTIONS
+========================================================= */
+
+.payment-app-options {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 7px;
+
+    margin-top: 14px;
+
+}
+
+
+/* =========================================================
+   APP CARD
+========================================================= */
+
+.payment-app-card {
+
+    position: relative;
+
+    min-height: 64px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding:
+        9px 10px;
+
+    border:
+        1px solid
+        #dddddd;
+
+    border-radius: 7px;
+
+    background:
+        #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+/* =========================================================
+   HIDE RADIO
+========================================================= */
+
+.payment-app-card input {
+
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   SELECTED CARD
+========================================================= */
+
+.payment-app-card:has(
+    input:checked
+) {
+
+    border-color:
+        #3a8f3a;
+
+    background:
+        #f7fcf7;
+
+    box-shadow:
+        0
+        0
+        0
+        1px
+        rgba(
+            58,
+            143,
+            58,
+            0.12
+        );
+
+}
+
+
+/* =========================================================
+   COMMON ICON
+========================================================= */
+
+.app-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+}
+
+
+/* =========================================================
+   GOOGLE PAY
+   EXACT SAME AS PAYMENT-APP.PHP
+========================================================= */
+
+.google-pay-icon {
+
+    width: 64px;
+
+    height: 64px;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4285f4 0%,
+            #34a853 35%,
+            #fbbc05 68%,
+            #ea4335 100%
+        );
+
+}
+
+
+.google-pay-letter {
+
+    width: 25px;
+
+    height: 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        #ffffff;
+
+    color:
+        #4285f4;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   PHONEPE
+   EXACT SAME COLOR
+========================================================= */
+
+.phonepe-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 7px;
+
+    background:
+        #5f259f;
+
+    color:
+        #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   PAYTM
+   EXACT SAME COLOR
+========================================================= */
+
+.paytm-icon {
+
+    width: 58px;
+
+    height: 34px;
+
+    border-radius: 7px;
+
+    background:
+        #eaf8ff;
+
+    color:
+        #00a9e0;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        -0.5px;
+
+}
+
+
+/* =========================================================
+   APP TEXT
+========================================================= */
+
+.payment-app-text {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+}
+
+
+.payment-app-text strong {
+
+    color:
+        #222222;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.payment-app-text small {
+
+    color:
+        #777777;
+
+    font-size: 8px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.payment-app-card:hover {
+
+    border-color:
+        #aaaaaa;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (
+    max-width: 650px
+) {
+
+    .payment-app-options {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
